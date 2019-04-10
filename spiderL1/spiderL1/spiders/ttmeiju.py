@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from spiderL1.spiderL1.items import Spiderl1Item
+from spiderL1.items import Spiderl1Item
 
 class TtmeijuSpider(scrapy.Spider):
     name = 'ttmeiju'  # 让scrapy框架定位爬虫的名称，必须唯一
