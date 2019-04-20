@@ -23,7 +23,7 @@ class MovieSpider(scrapy.Spider):
     def start_requests(self):
         url = '''https://maoyan.com/films?showType=3&offset={offset}'''
         requests = []
-        for i in range(100):
+        for i in range(27873):
             request = scrapy.Request(url.format(offset = 30 * i), callback = self.parse)
             requests.append(request)
         return requests
